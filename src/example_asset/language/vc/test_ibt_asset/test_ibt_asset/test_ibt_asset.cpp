@@ -215,7 +215,7 @@ void test_c_func()
 	//ibt_debug("连接到服务器成功...");
 	Sleep(1000);	
 
-	long l_sleep = 1000;
+	long l_sleep = 1000; // 1秒
 	// 查询所有的仓位
 	const char* p_BrokerID = NULL; // 经纪商ID "16377"; //
 	const char* p_InvestorID = NULL; //期货帐号 "70108202"; //

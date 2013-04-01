@@ -1,0 +1,5 @@
+C:\e\svn_google\icebreaker-trader\src\example_asset\language\c_sharp\test_ibt_asset\test_ibt_asset\bin\Release\test_ibt_asset.exe
+C:\e\svn_google\icebreaker-trader\src\example_asset\language\c_sharp\test_ibt_asset\test_ibt_asset\bin\Release\test_ibt_asset.pdb
+C:\e\svn_google\icebreaker-trader\src\example_asset\language\c_sharp\test_ibt_asset\test_ibt_asset\obj\x86\Release\ResolveAssemblyReference.cache
+C:\e\svn_google\icebreaker-trader\src\example_asset\language\c_sharp\test_ibt_asset\test_ibt_asset\obj\x86\Release\test_ibt_asset.exe
+C:\e\svn_google\icebreaker-trader\src\example_asset\language\c_sharp\test_ibt_asset\test_ibt_asset\obj\x86\Release\test_ibt_asset.pdb
