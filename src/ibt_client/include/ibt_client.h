@@ -51,6 +51,14 @@ LIBIBT_CLIENT_API int ibt_send_order(int Policy_ID,
 		int EntryOrExit,
 		int Lot);
 
+/* 扩展发送下单命令*/
+LIBIBT_CLIENT_API int ibt_send_order_ex(int Policy_ID,
+		int BuyOrSell,
+		int EntryOrExit,
+		int Lot,
+		int PriceType,
+		const char* InstrumentID);
+
 /* =========== 下面的是辅助工具 =========== */
 
 /* 获得当前路径 */
@@ -84,6 +92,15 @@ LIBIBT_CLIENT_API void ibt_send_order_r(int* p_Policy_ID,
 		int* p_BuyOrSell,
 		int* p_EntryOrExit,
 		int* p_Lot,
+		int* i_ret);
+
+/* 扩展发送下单命令 专门为R语言的接口 */
+LIBIBT_CLIENT_API void ibt_send_order_ex_r(int* p_Policy_ID,
+		int* p_BuyOrSell,
+		int* p_EntryOrExit,
+		int* p_Lot,		
+		int* PriceType,
+		const char** InstrumentID,
 		int* i_ret);
 
 /* =========== 下面的是辅助工具 =========== */
