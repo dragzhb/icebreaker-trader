@@ -51,7 +51,10 @@ LIBIBT_CLIENT_API int ibt_send_order(int Policy_ID,
 		int EntryOrExit,
 		int Lot);
 
-/* 扩展发送下单命令*/
+/* 扩展发送下单命令
+* PriceType  0 - 限价单， 1 - 市价单
+* InstrumentID - 商品名 大小写敏感 比如IF1305或rb1310
+*/
 LIBIBT_CLIENT_API int ibt_send_order_ex(int Policy_ID,
 		int BuyOrSell,
 		int EntryOrExit,
@@ -94,7 +97,10 @@ LIBIBT_CLIENT_API void ibt_send_order_r(int* p_Policy_ID,
 		int* p_Lot,
 		int* i_ret);
 
-/* 扩展发送下单命令 专门为R语言的接口 */
+/* 扩展发送下单命令 专门为R语言的接口 
+* PriceType  0 - 限价单， 1 - 市价单
+* InstrumentID - 商品名 大小写敏感 比如IF1305或rb1310
+*/
 LIBIBT_CLIENT_API void ibt_send_order_ex_r(int* p_Policy_ID,
 		int* p_BuyOrSell,
 		int* p_EntryOrExit,
