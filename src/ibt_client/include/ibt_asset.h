@@ -52,6 +52,26 @@ LIBIBT_ASSET_API IBTPosition* ibt_query_position(int* p_size,
 */
 LIBIBT_ASSET_API void release_position(IBTPosition* p_data);
 
+/** 查询仓位 
+* int* p_size - 返回的IBTPositionEx数组长度， < 0 - 出错，
+* const char* p_BrokerID - 要查询的经纪商ID, NULL - 查询所有
+* const char* p_InvestorID - 要查询的交易帐户, NULL - 查询所有
+* const char* p_InstrumentID - 要查询的商品名ID，比如IF，NULL - 查询所有
+* PosiDirectionType - 0 - 查询多仓和空仓， 1 - 只查询多仓， -1 - 只查询空仓
+*
+* @return IBTPositionEx* - 返回的IBTPositionEx数组,没有值，则 = NULL
+*/
+LIBIBT_ASSET_API IBTPositionEx* ibt_query_position_ex(int* p_size,
+	const char* p_BrokerID,const char* p_InvestorID,
+	const char* p_InstrumentID,
+	int PosiDirectionType);
+
+/**
+* 释放IBTPosition数组
+* 调用ibt_query_position后，必须调用该函数，不然会发生内存泄漏。
+*/
+LIBIBT_ASSET_API void release_position_ex(IBTPositionEx* p_data);
+
 /** 查询帐户汇总 
 * int* p_size - 返回的IBTAccountSum数组长度， < 0 - 出错，
 * const char* p_BrokerID - 要查询的经纪商ID, NULL - 查询所有

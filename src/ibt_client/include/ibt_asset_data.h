@@ -25,6 +25,40 @@ struct IBTPosition
 	double Commission; //佣金	
 };
 
+//仓位结构扩展
+struct IBTPositionEx
+{	
+	char BrokerID[11]; // 经纪公司代码
+	char InvestorID[13]; //投资者代码
+	char InstrumentID[31]; // 合约代码
+	
+	int	Position; //总持仓 多头 > 0, 空头 < 0
+	int	YdPosition; //昨日持仓 多头 > 0, 空头 < 0
+	int TodayPosition; //今日持仓 多头 > 0, 空头 < 0
+	
+	double OpenPrice; //开仓均价
+	double PositionPrice; //持仓均价
+	double LastPrice; //最新价
+	double YdPositionProfit; //浮动盈亏
+	double PositionProfit; //持仓盈亏
+	double UseMargin; //占用的保证金
+	double Commission; //佣金
+
+	// ======== add Ver3.4.5 ====
+	///最小变动价位
+	double PriceTick;
+	///合约数量乘数
+	int VolumeMultiple;
+	///涨停板价
+	double UpperLimitPrice;
+	///跌停板价
+	double LowerLimitPrice;
+	// 开仓后的最高价
+	double HighPrice;
+	// 开仓后的最低价
+	double LowPrice;
+};
+
 //帐户汇总
 struct IBTAccountSum 
 {	
