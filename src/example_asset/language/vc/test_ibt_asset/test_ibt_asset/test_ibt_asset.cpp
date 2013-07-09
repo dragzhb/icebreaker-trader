@@ -9,8 +9,13 @@
 #include "ibt_client.h"
 #include "ibt_asset_cxx.h"
 
+#ifndef _DEBUG
 #pragma comment(lib,"libibt_client_ex.lib")
 #pragma comment(lib,"libibt_asset.lib")
+#else
+#pragma comment(lib,"libibt_client_ex_d.lib")
+#pragma comment(lib,"libibt_asset_d.lib")
+#endif
 
 static void test_c_func();
 static void test_cxx_func();

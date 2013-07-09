@@ -62,6 +62,20 @@ LIBIBT_CLIENT_API int ibt_send_order_ex(int Policy_ID,
 		int PriceType,
 		const char* InstrumentID);
 
+/* 扩展发送下单命令2
+* PriceType  0 - 限价单， 1 - 市价单
+* InstrumentID - 商品名 大小写敏感 比如IF1305或rb1310
+* Price - 下单价格，只在PriceType = 0 限价单 才有效
+* SmoothPoint - 滑点，单位（跳） 整数 >= 0，此字段只有在Price > 0,才有效。
+*/
+LIBIBT_CLIENT_API int ibt_send_order_ex2(int Policy_ID,
+		int BuyOrSell,
+		int EntryOrExit,
+		int Lot,
+		int PriceType,
+		const char* InstrumentID,
+		double Price,double SmoothPoint);
+
 /* =========== 下面的是辅助工具 =========== */
 
 /* 获得当前路径 */
@@ -83,7 +97,7 @@ LIBIBT_CLIENT_API void ibt_info(const char* p_text);
 /* 打印ERROR信息 */
 LIBIBT_CLIENT_API void ibt_error(const char* p_text);
 
-/* =========== 下面的是R语言 =========== */
+/* =========== 下面的是R语言接口 =========== */
 
 /* 初始化 ibt_client R语言 */
 LIBIBT_CLIENT_API void ibt_init_r(int* i_ret);
@@ -107,6 +121,22 @@ LIBIBT_CLIENT_API void ibt_send_order_ex_r(int* p_Policy_ID,
 		int* p_Lot,		
 		int* PriceType,
 		const char** InstrumentID,
+		int* i_ret);
+
+/* 扩展发送下单命令2
+* PriceType  0 - 限价单， 1 - 市价单
+* InstrumentID - 商品名 大小写敏感 比如IF1305或rb1310
+* Price - 下单价格，只在PriceType = 0 限价单 才有效
+* SmoothPoint - 滑点，单位（跳） 整数 >= 0，此字段只有在Price > 0,才有效。
+*/
+LIBIBT_CLIENT_API void ibt_send_order_ex2_r(int* p_Policy_ID,
+		int* p_BuyOrSell,
+		int* p_EntryOrExit,
+		int* p_Lot,		
+		int* PriceType,
+		const char** InstrumentID,
+		double* Price,
+		double* SmoothPoint,
 		int* i_ret);
 
 /* =========== 下面的是辅助工具 =========== */

@@ -5,7 +5,13 @@
 #include "ibt_jzt.h"
 
 #include "ibt_client.h"
+
+#ifndef _DEBUG
 #pragma comment(lib,"libibt_client_ex.lib")
+#else
+#pragma comment(lib,"libibt_client_ex_d.lib")
+#endif
+
 
 //DLL公式的运行模式，系统系统调用该DLL时，告知公式系统该DLL公式运行在何种模式下
 //返回值:	  0本DLL运行序列模式 1本DLL运行逐周期模式

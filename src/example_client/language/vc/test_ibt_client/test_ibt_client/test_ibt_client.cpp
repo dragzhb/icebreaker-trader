@@ -7,7 +7,11 @@
 
 #include "ibt_client.h"
 
+#ifndef _DEBUG
 #pragma comment(lib,"libibt_client_ex.lib")
+#else
+#pragma comment(lib,"libibt_client_ex_d.lib")
+#endif
 
 using namespace std;
 
