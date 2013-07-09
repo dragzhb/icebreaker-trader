@@ -1,0 +1,5 @@
+C:\e\svn_google\icebreaker-trader\src\example_client\language\c_sharp\test_ibt_client\test_ibt_client\bin\Release\test_ibt_client.exe
+C:\e\svn_google\icebreaker-trader\src\example_client\language\c_sharp\test_ibt_client\test_ibt_client\bin\Release\test_ibt_client.pdb
+C:\e\svn_google\icebreaker-trader\src\example_client\language\c_sharp\test_ibt_client\test_ibt_client\obj\x86\Release\ResolveAssemblyReference.cache
+C:\e\svn_google\icebreaker-trader\src\example_client\language\c_sharp\test_ibt_client\test_ibt_client\obj\x86\Release\test_ibt_client.exe
+C:\e\svn_google\icebreaker-trader\src\example_client\language\c_sharp\test_ibt_client\test_ibt_client\obj\x86\Release\test_ibt_client.pdb
