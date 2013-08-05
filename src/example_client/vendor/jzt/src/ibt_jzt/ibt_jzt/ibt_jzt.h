@@ -1,5 +1,5 @@
-#ifndef __STOCKFUNC_H_INCLUDE
-#define __STOCKFUNC_H_INCLUDE
+#ifndef __IBT_JZT_H_INCLUDE
+#define __IBT_JZT_H_INCLUDE
 
 #include "stdafx.h"
 
@@ -288,4 +288,4 @@ __declspec(dllexport) int WINAPI IBT_ORDER(CALCINFO* pData);
 }
 #endif //__cplusplus
 
-#endif //__STOCKFUNC_H_INCLUDE
+#endif //__IBT_JZT_H_INCLUDE

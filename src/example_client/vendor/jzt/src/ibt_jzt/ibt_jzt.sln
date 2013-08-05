@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual C++ Express 2010
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ibt_jzt", "ibt_jzt\ibt_jzt.vcxproj", "{F7416539-2EE2-4110-95E2-B82D1A6B62F1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ibt_jzt_zk", "ibt_jzt_zk\ibt_jzt_zk.vcxproj", "{75E788EE-EABC-4AE3-8E45-0F8467299899}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -13,6 +15,10 @@ Global
 		{F7416539-2EE2-4110-95E2-B82D1A6B62F1}.Debug|Win32.Build.0 = Debug|Win32
 		{F7416539-2EE2-4110-95E2-B82D1A6B62F1}.Release|Win32.ActiveCfg = Release|Win32
 		{F7416539-2EE2-4110-95E2-B82D1A6B62F1}.Release|Win32.Build.0 = Release|Win32
+		{75E788EE-EABC-4AE3-8E45-0F8467299899}.Debug|Win32.ActiveCfg = Debug|Win32
+		{75E788EE-EABC-4AE3-8E45-0F8467299899}.Debug|Win32.Build.0 = Debug|Win32
+		{75E788EE-EABC-4AE3-8E45-0F8467299899}.Release|Win32.ActiveCfg = Release|Win32
+		{75E788EE-EABC-4AE3-8E45-0F8467299899}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
