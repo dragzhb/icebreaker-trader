@@ -3,8 +3,7 @@
     |-  ibt_client  <== 开发所需要的头文件，库文件
 	|-  example_client  《== 下单API举例
 			|-  language    <== 各种语言的开发例子
-			|-  vendor      <== 支持的行情提供商
-				|- tb            <== 交易开拓者（TB）
+			|-  vendor      <== 支持的行情提供商				
 				|- jzt           <== 金字塔
 				
 	|-  example_asset  《== 仓位查询API举例
