@@ -1,1 +1,1 @@
-{ibt}version=1.5.0;link=http://code.google.com/p/icebreaker-trader/downloads/list;release_day=20130823{ibt}
+{ibt}version=1.5.1;link=http://code.google.com/p/icebreaker-trader/downloads/list;release_day=20130923{ibt}
