@@ -1,1 +1,1 @@
-<!-- {ibt}version=1.5.2;link=http://skydrive.live.com/?cid=2120A9CD1849306A&id=2120A9CD1849306A!105;release_day=20130930{ibt} -->
+{ibt}version=1.5.2{sub}link=http://skydrive.live.com/?cid=2120A9CD1849306A&id=2120A9CD1849306A!105{sub}release_day=20130930{ibt}
