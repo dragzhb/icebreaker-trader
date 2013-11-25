@@ -66,7 +66,7 @@ LIBIBT_CLIENT_API int ibt_send_order_ex(int Policy_ID,
 * PriceType  0 - 限价单， 1 - 市价单
 * InstrumentID - 商品名 大小写敏感 比如IF1305或rb1310
 * Price - 下单价格，只在PriceType = 0 限价单 才有效
-* SmoothPoint - 滑点，单位（跳） 整数 >= 0，此字段只有在Price > 0,才有效。
+* SmoothPoint - 滑点，单位（跳） 整数(可以是负数)。
 */
 LIBIBT_CLIENT_API int ibt_send_order_ex2(int Policy_ID,
 		int BuyOrSell,
@@ -127,7 +127,7 @@ LIBIBT_CLIENT_API void ibt_send_order_ex_r(int* p_Policy_ID,
 * PriceType  0 - 限价单， 1 - 市价单
 * InstrumentID - 商品名 大小写敏感 比如IF1305或rb1310
 * Price - 下单价格，只在PriceType = 0 限价单 才有效
-* SmoothPoint - 滑点，单位（跳） 整数 >= 0，此字段只有在Price > 0,才有效。
+* SmoothPoint - 滑点，单位（跳） 整数(可以是负数)。
 */
 LIBIBT_CLIENT_API void ibt_send_order_ex2_r(int* p_Policy_ID,
 		int* p_BuyOrSell,

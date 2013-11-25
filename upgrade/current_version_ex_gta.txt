@@ -1,1 +1,1 @@
-{ibt}version=1.5.6{sub}link=http://pan.baidu.com/s/1EG6ly#dir/path=%2Fgta_ctp_aide{sub}release_day=20131119{ibt}
+{ibt}version=1.5.7{sub}link=http://pan.baidu.com/s/1EG6ly#dir/path=%2Fgta_ctp_aide{sub}release_day=20131125{ibt}
