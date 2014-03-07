@@ -1,1 +1,1 @@
-{ibt}version=1.6.0{sub}link=http://pan.baidu.com/s/13OzCX#dir/path=%2Ficebreaker_trader{sub}release_day=20140121{ibt}
+{ibt}version=1.6.1{sub}link=http://pan.baidu.com/s/13OzCX#dir/path=%2Ficebreaker_trader{sub}release_day=20140307{ibt}
